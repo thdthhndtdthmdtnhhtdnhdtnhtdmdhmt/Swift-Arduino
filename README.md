@@ -47,47 +47,9 @@ Import the module:
 
 import SwiftArduino
 
-Quick Start
-
-Turn a pin on/off:
-
-make pin "13" on
-make pin "12" off
-
-
-Read a digital pin:
-
-let pinState = read pin "7"
-print("Pin 7 state: \(pinState)")
-
-
-Set PWM value for analog pins:
-
-set pin "9" to 128  // 0-255
-
-
-Control a servo:
-
-move servo "10" to 90
-move servo "10" to 0
-
-
-Blink an LED:
-
-repeat 5 times {
-    make pin "13" on
-    wait 1
-    make pin "13" off
-    wait 1
-}
-
 
 ### Swift Package Manager
 ```swift
 dependencies: [
     .package(url: "https://github.com/Mr-Stickman1/Swift-Arduino.git", from: "1.0.0")
 ]
-
-
-
-th other Swift developers!
